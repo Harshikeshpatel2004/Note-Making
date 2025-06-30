@@ -9,7 +9,7 @@ import path from'path';
 import { type } from 'os';
 
 const app = express()
-
+const _dirname = path.resolve();
 
 app.use(express.json())
 app.use(cors())
@@ -202,6 +202,12 @@ app.get('/notes/view/:id', async (req, res) => {
     }
 });
 const PORT = 5000;
+
+app.use(express.static(path.join(_dirname, '/app/dist')));
+app.get('*', (_, res) => {
+    res.sendFile(path.resolve(_dirname, '/app/dist/index.html'));
+}); 
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 
