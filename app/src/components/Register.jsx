@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import axios from 'axios'
 import { Link} from 'react-router-dom'
 
-   const API_URL = 'http://localhost:5000' // Replace with your actual API URL
+   const API_URL = 'https://note-making-2hgc.onrender.com' // Replace with your actual API URL
  const Register = () => {
     const [formData, setFormData] = useState({
         username: '',

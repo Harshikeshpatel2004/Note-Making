@@ -5,7 +5,7 @@ import { AuthContext } from '../context/AuthContext'
 import { Link } from "react-router-dom"
 // filepath: c:\Users\Bipin Bihari\OneDrive\Desktop\Notes Making\app\src\components\Login.jsx
 
-const API_URL = 'http://localhost:5000'
+const API_URL = 'https://note-making-2hgc.onrender.com'
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' })

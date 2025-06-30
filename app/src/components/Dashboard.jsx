@@ -3,7 +3,7 @@ import {jwtDecode} from 'jwt-decode'
 import axios from 'axios'
 //import { set } from 'mongoose'
 
-const API_URL = 'http://localhost:5000' // Replace with your actual API URL
+const API_URL = 'https://note-making-2hgc.onrender.com' // Replace with your actual API URL
 
 const Dashboard = () => {
     const [notes, setNotes] = useState([])
